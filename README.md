@@ -1,22 +1,17 @@
 # impala_and_airflow_practise
 
 This exercise has an airflow job - airflow_code.py which creates three possible dags as follows:
-<ul>
-	<li>
-		setup - used to setup sqoop jobs and database. 
-		```sh
-		airflow trigger_dag setup
-		```
-	</li>
-	<li>schedule - used to schedule data transfer to hive and report generation. This DAG is scheduled to run daily and does not have
-		to be manually triggered. However the setup dag must be run before this runs.
-	</li>
-	<li>cleanup - used to clean up sqoop jobs, databse tables and hdfs folders.
-		```sh
-		airflow trigger_dag cleanup
-		```
-	</li>
-</ul>
+</b>setup</b> - used to setup sqoop jobs and database. 
+```sh
+airflow trigger_dag setup
+```
+
+<b>schedule</b>b> - used to schedule data transfer to hive and report generation. This DAG is scheduled to run daily and does not have to be manually triggered. However the setup dag must be run before this runs.
+
+<b>cleanup </b>b>- used to clean up sqoop jobs, databse tables and hdfs folders.
+```sh
+airflow trigger_dag cleanup
+```
 
 The dag 'schedule' has 4 tasks:
 <ol>
