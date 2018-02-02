@@ -1,0 +1,1 @@
+# impala_and_airflow_practise
